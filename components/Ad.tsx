@@ -101,21 +101,7 @@ export function NativeAd({
 }: {
   ratio: "1:4" | "4:1";
 }) {
-  if (ratio === "1:4") {
-    return (
-      <div className="ad-unit native-rail">
-        <AdLabel />
-
-        <BannerFrame
-          width={160}
-          height={600}
-          keyId="d9e3c3690acd9a9e2705553e9f895ff6"
-        />
-      </div>
-    );
-  }
-
-  const srcDoc = `<!doctype html>
+  const nativeSrcDoc = `<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -124,29 +110,68 @@ export function NativeAd({
 html,body{
   margin:0;
   padding:0;
-  width:100%;
-  min-height:100%;
   background:transparent;
 }
+
+.native-container{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
 #container-ae3597be66f2f0d63a2cbeebeb6a1b74{
   width:100%;
-  min-height:160px;
+  height:100%;
+  min-height:100%;
 }
 </style>
 </head>
 <body>
-<div id="container-ae3597be66f2f0d63a2cbeebeb6a1b74"></div>
-<script async src="https://disregardpervertmural.com/ae3597be66f2f0d63a2cbeebeb6a1b74/invoke.js"></script>
+<div class="native-container">
+  <div id="container-ae3597be66f2f0d63a2cbeebeb6a1b74"></div>
+</div>
+
+<script
+  async="async"
+  data-cfasync="false"
+  src="https://disregardpervertmural.com/ae3597be66f2f0d63a2cbeebeb6a1b74/invoke.js"
+></script>
 </body>
 </html>`;
+
+  if (ratio === "1:4") {
+    return (
+      <div className="ad-unit native-rail">
+        <AdLabel />
+
+        <iframe
+          title="Native Advertisement 1:4"
+          srcDoc={nativeSrcDoc}
+          width="160"
+          height="600"
+          loading="lazy"
+          scrolling="no"
+          frameBorder="0"
+          style={{
+            display: "block",
+            width: "160px",
+            height: "600px",
+            maxWidth: "100%",
+            border: 0,
+            overflow: "hidden",
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="ad-unit native-unit">
       <AdLabel />
 
       <iframe
-        title="Native Advertisement"
-        srcDoc={srcDoc}
+        title="Native Advertisement 4:1"
+        srcDoc={nativeSrcDoc}
         width="640"
         height="160"
         loading="lazy"
