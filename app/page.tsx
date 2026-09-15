@@ -25,7 +25,10 @@ export default function HomePage() {
           <div className="brand">
             PULSE <span>/ USA Games</span>
           </div>
-          <div className="header-note">Fast U.S. trend coverage</div>
+
+          <div className="header-note">
+            Fast U.S. trend coverage
+          </div>
         </div>
       </header>
 
@@ -38,7 +41,9 @@ export default function HomePage() {
           <article className="article-card">
             <div className="kicker">USA Games</div>
 
-            <h1>The Games Capturing America's Attention Right Now</h1>
+            <h1>
+              The Games Capturing America's Attention Right Now
+            </h1>
 
             <div className="top-ad">
               <BannerAd size="wide" />
@@ -75,7 +80,11 @@ export default function HomePage() {
                   ))}
 
                   <BannerAd
-                    size={index % 2 === 0 ? "medium" : "mobile"}
+                    size={
+                      index % 2 === 0
+                        ? "medium"
+                        : "mobile"
+                    }
                   />
                 </section>
               ))}
@@ -184,12 +193,10 @@ export default function HomePage() {
                 coming back.
               </p>
 
-              {/* Article-end Native 4:1 ad */}
               <NativeAd ratio="4:1" />
             </div>
           </article>
 
-          {/* Right sidebar: Native 1:4 vertical ad */}
           <aside className="sidebar">
             <div className="sidebar-card">
               <h3>Featured</h3>
@@ -202,6 +209,7 @@ export default function HomePage() {
       <footer className="footer">
         <div className="footer-inner">
           <BannerAd size="wide" />
+
           © 2026 Pulse. Independent U.S. games coverage.
         </div>
       </footer>
