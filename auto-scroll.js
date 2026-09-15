@@ -1,58 +1,40 @@
 (function () {
   "use strict";
 
-  /*
-   * PulseViral automatic article scroll
-   * Starts immediately after the page is ready.
-   * Smoothly scrolls for 5 seconds to approximately
-   * 45% of the article, centered in the viewport.
-   */
-
   var DURATION = 5000;
   var ARTICLE_RATIO = 0.45;
 
   function easeInOut(t) {
-    if (t < 0.5) {
-      return 4 * t * t * t;
-    }
-
-    return 1 - Math.pow(-2 * t + 2, 3) / 2;
+    return t < 0.5
+      ? 4 * t * t * t
+      : 1 - Math.pow(-2 * t + 2, 3) / 2;
   }
 
-  function findArticle(attempts) {
-    var article = document.querySelector(".article");
+  function getArticle() {
+    return document.querySelector(".article");
+  }
 
-    if (article) {
-      beginScroll(article);
+  function startScroll() {
+    var article = getArticle();
+
+    if (!article) {
+      setTimeout(startScroll, 300);
       return;
     }
 
-    if (attempts < 120) {
-      window.requestAnimationFrame(function () {
-        findArticle(attempts + 1);
-      });
-    }
-  }
-
-  function beginScroll(article) {
-    var startScroll =
+    var startScrollPosition =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
       0;
 
-    var articleRect = article.getBoundingClientRect();
-
     var articleTop =
-      articleRect.top + startScroll;
+      article.getBoundingClientRect().top +
+      startScrollPosition;
 
     var articleHeight =
-      article.scrollHeight || article.offsetHeight;
+      article.scrollHeight ||
+      article.offsetHeight;
 
-    /*
-     * Target approximately 45% down the article
-     * and position that point around the center
-     * of the user's screen.
-     */
     var target =
       articleTop +
       articleHeight * ARTICLE_RATIO -
@@ -70,47 +52,58 @@
     );
 
     var distance =
-      destination - startScroll;
+      destination - startScrollPosition;
 
-    if (Math.abs(distance) < 2) {
+    if (distance <= 2) {
+      /*
+       * The page may still be expanding because
+       * advertisement iframes are loading.
+       * Try again after the layout settles.
+       */
+      setTimeout(startScroll, 1000);
       return;
     }
 
-    var startTime = window.performance.now();
+    var startTime = performance.now();
 
-    function step(now) {
-      var progress = Math.min(
-        (now - startTime) / DURATION,
-        1
-      );
+    function animate(now) {
+      var progress =
+        Math.min(
+          (now - startTime) / DURATION,
+          1
+        );
 
       var eased = easeInOut(progress);
 
-      var current =
-        startScroll +
-        distance * eased;
-
-      window.scrollTo(0, current);
+      window.scrollTo(
+        0,
+        startScrollPosition +
+          distance * eased
+      );
 
       if (progress < 1) {
-        window.requestAnimationFrame(step);
+        requestAnimationFrame(animate);
       }
     }
 
-    window.requestAnimationFrame(step);
+    requestAnimationFrame(animate);
   }
 
-  function startAutoScroll() {
-    findArticle(0);
+  /*
+   * Wait until the entire page, including ad iframes,
+   * has finished loading before calculating the destination.
+   */
+  function boot() {
+    setTimeout(startScroll, 1500);
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener(
-      "DOMContentLoaded",
-      startAutoScroll,
+  if (document.readyState === "complete") {
+    boot();
+  } else {
+    window.addEventListener(
+      "load",
+      boot,
       { once: true }
     );
-  } else {
-    startAutoScroll();
   }
 })();
