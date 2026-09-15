@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f4f6f8;color:#111827;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}
+.site-header{border-bottom:1px solid #dfe4e8;background:#fff;position:sticky;top:0;z-index:20}
+.header-inner{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:22px;font-weight:800;letter-spacing:-.03em}
+.brand span{font-weight:500;color:#6b7280}
+.header-note{font-size:12px;color:#6b7280}
+.page{max-width:1180px;margin:0 auto;padding:22px 20px 44px}
+.top-ad{margin:0 auto 18px;display:flex;justify-content:center}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+.article-card{background:#fff;border:1px solid #e4e8ec;border-radius:18px;padding:30px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#555}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.05em;margin:10px 0 14px}
+.dek{font-size:19px;line-height:1.55;color:#4b5563;margin:0 0 22px;max-width:800px}
+.meta{font-size:12px;color:#6b7280;padding-bottom:18px;border-bottom:1px solid #e5e7eb}
+.article-body{font-size:18px;line-height:1.78;color:#1f2937}
+.article-body h2{font-size:30px;line-height:1.15;letter-spacing:-.03em;margin:34px 0 12px}
+.article-body p{margin:0 0 18px}
+.article-body strong{color:#111827}
+.ad-unit{margin:20px 0;display:flex;flex-direction:column;gap:6px;align-items:center}
+.ad-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af}
+.ad-placeholder{min-height:58px;width:min(100%,728px);border:1px dashed #cfd6dc;background:#fafafa;display:flex;align-items:center;justify-content:center;text-align:center;color:#9aa1a8;font-size:11px}
+.banner-wide .ad-placeholder{min-height:90px}
+.banner-medium .ad-placeholder{min-height:60px;max-width:468px}
+.banner-mobile .ad-placeholder{min-height:50px;max-width:320px}
+.native-placeholder{width:100%;min-height:160px}
+.sidebar{position:sticky;top:78px}
+.sidebar-card{background:#fff;border:1px solid #e4e8ec;border-radius:18px;padding:14px}
+.sidebar-card h3{margin:4px 4px 8px;font-size:13px}
+.footer{border-top:1px solid #dfe4e8;background:#fff;margin-top:12px}
+.footer-inner{max-width:1180px;margin:auto;padding:28px 20px;color:#6b7280;font-size:12px;text-align:center}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static}.header-note{display:none}.page{padding:14px 12px 34px}.article-card{padding:20px;border-radius:14px}h1{font-size:38px}.article-body{font-size:17px}.article-body h2{font-size:26px}}
+@media(max-width:520px){h1{font-size:33px}.dek{font-size:17px}.article-body{font-size:16px;line-height:1.7}.banner-wide .ad-placeholder{min-height:50px}.top-ad{margin-bottom:10px}}
