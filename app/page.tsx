@@ -22,20 +22,27 @@ export default function HomePage() {
     <>
       <header className="site-header">
         <div className="header-inner">
-          <div className="brand">PULSE <span>/ USA Games</span></div>
+          <div className="brand">
+            PULSE <span>/ USA Games</span>
+          </div>
           <div className="header-note">Fast U.S. trend coverage</div>
         </div>
       </header>
 
       <main className="page">
-        <div className="top-ad"><BannerAd size="wide" /></div>
+        <div className="top-ad">
+          <BannerAd size="wide" />
+        </div>
 
         <div className="layout">
           <article className="article-card">
             <div className="kicker">USA Games</div>
+
             <h1>The Games Capturing America's Attention Right Now</h1>
 
-            <div className="top-ad"><BannerAd size="wide" /></div>
+            <div className="top-ad">
+              <BannerAd size="wide" />
+            </div>
 
             <p className="dek">
               From major console releases to competitive favorites and sports
@@ -43,7 +50,9 @@ export default function HomePage() {
               talking about across the United States.
             </p>
 
-            <div className="meta">Published September 15, 2026 · Approx. 6 minute read</div>
+            <div className="meta">
+              Published September 15, 2026 · Approx. 6 minute read
+            </div>
 
             <div className="article-body">
               <BannerAd size="medium" />
@@ -52,22 +61,27 @@ export default function HomePage() {
                 Gaming in the United States has never been just one thing. The
                 country has a huge audience for console and PC releases, a
                 deeply established sports-game culture, fast-growing mobile
-                communities and a competitive scene that can turn a game into
-                a spectator event. The result is a market where players often
+                communities and a competitive scene that can turn a game into a
+                spectator event. The result is a market where players often
                 move between several kinds of games during the same week.
               </p>
 
               {sections.map((section, index) => (
                 <section key={section.title}>
                   <h2>{section.title}</h2>
+
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
-                  <BannerAd size={index % 2 === 0 ? "medium" : "mobile"} />
+
+                  <BannerAd
+                    size={index % 2 === 0 ? "medium" : "mobile"}
+                  />
                 </section>
               ))}
 
               <h2>Console and PC still matter</h2>
+
               <p>
                 Big-budget releases continue to attract attention because they
                 combine recognizable characters, large production values and
@@ -76,6 +90,7 @@ export default function HomePage() {
                 compare experiences, creators publish guides, and online
                 communities quickly build their own vocabulary around a title.
               </p>
+
               <BannerAd size="medium" />
 
               <p>
@@ -86,9 +101,11 @@ export default function HomePage() {
                 helps keep the PC audience active even when there is no single
                 dominant release.
               </p>
+
               <BannerAd size="mobile" />
 
               <h2>Competitive play has become entertainment</h2>
+
               <p>
                 Competitive games occupy an interesting position in U.S.
                 culture. Players can participate directly, watch professional
@@ -97,6 +114,7 @@ export default function HomePage() {
                 simultaneously as a product, a hobby, a social space and a
                 spectator sport.
               </p>
+
               <BannerAd size="medium" />
 
               <p>
@@ -106,9 +124,11 @@ export default function HomePage() {
                 rather than the one-time attention associated with an older
                 release cycle.
               </p>
+
               <BannerAd size="mobile" />
 
               <h2>Sports games have a built-in U.S. audience</h2>
+
               <p>
                 Sports titles are especially durable in America because the
                 calendar itself creates recurring demand. When a new football,
@@ -117,6 +137,7 @@ export default function HomePage() {
                 A game can ride that real-world interest while adding its own
                 online competition and community features.
               </p>
+
               <BannerAd size="medium" />
 
               <p>
@@ -126,9 +147,11 @@ export default function HomePage() {
                 ratings, seasonal events and the feeling of controlling a
                 favorite team.
               </p>
+
               <BannerAd size="mobile" />
 
               <h2>What players are likely to watch next</h2>
+
               <p>
                 The next wave of attention will probably be driven by a mix of
                 major launches and unexpected community hits. A game can break
@@ -136,6 +159,7 @@ export default function HomePage() {
                 also become popular because creators discover something fun,
                 competitive or social that spreads quickly.
               </p>
+
               <BannerAd size="medium" />
 
               <p>
@@ -145,9 +169,11 @@ export default function HomePage() {
                 conversations around releases, updates, tournaments, sports
                 seasons and the communities that grow around them.
               </p>
+
               <BannerAd size="mobile" />
 
               <h2>The bottom line</h2>
+
               <p>
                 Games remain a powerful part of everyday entertainment in the
                 United States because they fit many different habits. Some
@@ -158,10 +184,12 @@ export default function HomePage() {
                 coming back.
               </p>
 
+              {/* Article-end Native 4:1 ad */}
               <NativeAd ratio="4:1" />
             </div>
           </article>
 
+          {/* Right sidebar: Native 1:4 vertical ad */}
           <aside className="sidebar">
             <div className="sidebar-card">
               <h3>Featured</h3>
