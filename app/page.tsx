@@ -33,8 +33,18 @@ export default function HomePage() {
       </header>
 
       <main className="page">
-        <div className="top-ad">
-          <BannerAd size="wide" />
+        <div className="top-ad top-ad-stack">
+          <div className="top-ad-wide">
+            <BannerAd size="wide" />
+          </div>
+
+          <div className="top-ad-medium">
+            <BannerAd size="medium" />
+          </div>
+
+          <div className="top-ad-mobile">
+            <BannerAd size="mobile" />
+          </div>
         </div>
 
         <div className="layout">
