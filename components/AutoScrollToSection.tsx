@@ -11,10 +11,9 @@ export default function AutoScrollToSection({
 }: AutoScrollToSectionProps) {
   useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    let target: HTMLElement | null = null;
 
-    const scrollToTarget = () => {
-      const target = document.getElementById(targetId);
-
+    const handleTargetClick = () => {
       if (!target) {
         return;
       }
@@ -30,7 +29,18 @@ export default function AutoScrollToSection({
     };
 
     const handleLoad = () => {
-      timeoutId = setTimeout(scrollToTarget, 300);
+      target = document.getElementById(targetId);
+
+      if (!target) {
+        return;
+      }
+
+      target.addEventListener("click", handleTargetClick);
+
+      // Automatically click the section header 2 seconds after opening.
+      timeoutId = setTimeout(() => {
+        target?.click();
+      }, 2000);
     };
 
     if (document.readyState === "complete") {
@@ -41,9 +51,12 @@ export default function AutoScrollToSection({
 
     return () => {
       window.removeEventListener("load", handleLoad);
+
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
+
+      target?.removeEventListener("click", handleTargetClick);
     };
   }, [targetId]);
 
