@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:cloudflare": "npx opennextjs-cloudflare build",
-    "deploy": "npx wrangler deploy",
-    "preview": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare preview"
+    "build:cloudflare": "npx --yes --package=@opennextjs/cloudflare@1.20.6 opennextjs-cloudflare build",
+    "deploy": "npx --yes --package=@opennextjs/cloudflare@1.20.6 opennextjs-cloudflare build && npx --yes --package=wrangler@4.136.2 wrangler deploy",
+    "preview": "npx --yes --package=@opennextjs/cloudflare@1.20.6 opennextjs-cloudflare build && npx --yes --package=@opennextjs/cloudflare@1.20.6 opennextjs-cloudflare preview"
   },
   "dependencies": {
     "next": "16.3.5",
