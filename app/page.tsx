@@ -95,6 +95,7 @@ export default function HomePage() {
                 separate from the wider Clubs experience.
               </p>
 
+              <ResponsiveBanner />
               <NativeAd ratio="4:1" />
 
               <h2>Career Mode gets a more active transfer market</h2>
@@ -206,6 +207,8 @@ export default function HomePage() {
                 and attacking decisions feel more responsive while preserving the
                 differences between casual, career and competitive play.
               </p>
+
+              <ResponsiveBanner />
 
               <h2>Who is FC 27 for?</h2>
 
