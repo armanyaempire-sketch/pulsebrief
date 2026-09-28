@@ -9,6 +9,11 @@ export function GlobalAds() {
         src={pulseAds.socialBarScriptSrc}
         strategy="afterInteractive"
       />
+      <Script
+        id="pulse-popunder"
+        src={pulseAds.popunderScriptSrc}
+        strategy="afterInteractive"
+      />
     </>
   );
 }
