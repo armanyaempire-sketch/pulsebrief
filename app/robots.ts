@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://pulseviral.example/sitemap.xml",
+    sitemap: "https://pulsebrief-6sz.pages.dev/sitemap.xml",
   };
 }
