@@ -15,13 +15,15 @@ export default function ContactPage() {
           Use this page for editorial questions, factual corrections, privacy
           requests or general feedback about PulseViral.
         </p>
+        <h2>Corrections and questions</h2>
         <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:contact@pulseviral.example">contact@pulseviral.example</a>
+          A dedicated production contact address will be published here before
+          the site moves from the temporary Pages address to its final custom
+          domain.
         </p>
         <p className="small-note">
-          Replace this placeholder address with the production mailbox before
-          publishing the site publicly.
+          Contact details are intentionally not fabricated or redirected through
+          a third-party mailbox.
         </p>
       </div>
     </main>
