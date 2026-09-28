@@ -7,9 +7,8 @@ export default function HomePage() {
       <header className="site-header">
         <div className="header-inner">
           <Link className="brand" href="/">
-            PULSEVIRAL <span>/ USA Games</span>
+            PULSEVIRAL <span>/ Soccer Game Guide</span>
           </Link>
-
           <div className="header-note">U.S. gaming guides and data</div>
         </div>
       </header>
@@ -26,223 +25,279 @@ export default function HomePage() {
 
         <div className="layout">
           <article className="article-card">
-            <div className="kicker">U.S. Gaming Data</div>
+            <div className="kicker">Soccer Game Guide · Updated September 28, 2026</div>
 
-            <h1>How Big Is Gaming in the U.S. in 2026? Key Numbers and What They Mean</h1>
+            <h1>EA SPORTS FC 27: What's New, The Grounds, Career Mode and Ultimate Team</h1>
 
             <p className="dek">
-              More than 212 million Americans now play video games every week.
-              Here is what the latest U.S. industry data says about who plays,
-              how people play, and where the market is heading.
+              EA SPORTS FC 27 launched worldwide on September 25, 2026. The new
+              soccer game adds The Grounds, a rebuilt Career Mode transfer market,
+              a new Ultimate Team Gallery and gameplay changes aimed at giving
+              players more control across different ways to play.
             </p>
 
             <div className="meta">
-              Published September 28, 2026 · Updated September 28, 2026 · Approx. 7 minute read
+              Published September 28, 2026 · Updated September 28, 2026 · Approx. 8 minute read
             </div>
 
             <div className="article-body">
-              <h2>212.3 million Americans play video games every week</h2>
+              <h2>EA SPORTS FC 27 is now available</h2>
 
               <p>
-                The latest Essential Facts report from the Entertainment Software
-                Association (ESA), released June 3, 2026, says 212.3 million
-                Americans ages 5 to 90 play video games every week. That is up
-                3%, or about 7.2 million people, from the previous year. The report
-                also puts the share of Americans who play at 67%.
+                EA SPORTS FC 27 is the current annual entry in EA's football
+                series, and its worldwide launch took place on September 25, 2026.
+                EA describes the release as a community-driven update focused on
+                giving players more ways to play, compete and connect. The launch
+                follows early access for eligible editions and services earlier
+                in September.
               </p>
 
               <p>
-                Those figures change the way a U.S. gaming audience should be
-                described. Gaming is not a small youth-only segment. The ESA says
-                the average U.S. player is now 37, and weekly participation reaches
-                a majority of adults in several age groups.
+                The most visible change is not simply a new roster or a visual
+                refresh. FC 27 adds a new social space called The Grounds and
+                changes several established modes, including Career Mode and
+                Football Ultimate Team. That gives the game a broader structure:
+                players can spend time in traditional matches, build a career,
+                manage a club or use the new social playground.
               </p>
 
               <div className="callout">
-                <strong>Latest U.S. snapshot:</strong> 212.3 million weekly
-                players, 67% of Americans ages 5–90, and an average player age of
-                37, according to the ESA's 2026 report.
+                <strong>At a glance:</strong> FC 27 launched September 25, 2026.
+                Its headline additions include The Grounds, a rebuilt Career
+                transfer market, the new FUT Gallery and gameplay changes such as
+                dynamic corners and enhanced attacking awareness.
               </div>
 
-              <h2>Gaming reaches well beyond teenagers</h2>
+              <h2>The Grounds changes the Clubs experience</h2>
 
               <p>
-                The 2026 ESA report shows weekly participation across generations.
-                More than 80% of Gen Alpha and Gen Z play, while 71% of Millennials,
-                56% of Gen X and 50% of Boomers report playing each week. The
-                audience is therefore broad enough to support different kinds of
-                games, hardware, subscriptions, communities and viewing habits.
+                The Grounds is the headline feature of FC 27. EA describes it as
+                a social football playground built around Clubs, with activities
+                ranging from casual Kickabouts and 1v1s to small-sided play and
+                11v11 stadium competition. It is designed to give players
+                something to do even when their usual Club teammates are offline.
               </p>
 
               <p>
-                That matters for anyone trying to understand what is popular in
-                the United States. A useful gaming trend report cannot focus on a
-                single age group or platform. Competitive multiplayer, sports
-                games, mobile titles, major console releases and long-running
-                communities can all attract different slices of the same national
-                audience.
+                The space contains three districts inspired by football culture
+                in the United Kingdom, France and Argentina. EA says up to 100
+                players can occupy The Grounds at the same time, and live matches
+                can be watched from the sidelines. That creates a different kind
+                of online experience from a normal menu-driven football game:
+                players can meet people, play smaller games, spectate and recruit
+                potential Club members.
+              </p>
+
+              <p>
+                The Grounds is available on PlayStation 5, Xbox Series X|S,
+                Nintendo Switch 2 and PC. It also connects progression to a
+                player's Pro, so time spent in the mode is not completely
+                separate from the wider Clubs experience.
               </p>
 
               <NativeAd ratio="4:1" />
 
-              <h2>Mobile gaming is part of the mainstream</h2>
+              <h2>Career Mode gets a more active transfer market</h2>
 
               <p>
-                Mobile play is another reason a U.S. gaming site needs to look
-                beyond consoles and PC. The ESA's 2025 industry data found that
-                82% of players age 8 and older used a mobile device to play games.
-                Separately, industry spending data reported by ESA showed U.S.
-                consumer spending on video games reached about $60.8 billion in
-                2025.
+                Career Mode receives one of the game's clearest management-focused
+                changes: a rebuilt Transfer Market. Instead of a mostly static
+                buying process, EA says the market now includes active club
+                bidding and more dynamic player values through its TransferRoom
+                integration.
               </p>
 
               <p>
-                Mobile also changes how often people interact with games. A phone
-                can be used for a few minutes between other activities, while a
-                console or PC session may be much longer. For publishers and
-                creators, that means "gaming audience" can describe very different
-                user journeys.
-              </p>
-
-              <h2>Why specific games matter more than generic trend claims</h2>
-
-              <p>
-                A phrase such as "games are popular in America" is too broad to
-                tell a reader much. A useful gaming article should identify the
-                title, platform, date, audience or measurable trend it is
-                discussing. That is why we will build our coverage around specific
-                games, releases, genres, services and verified industry data.
+                According to EA, player values can reflect factors such as club
+                buying power, potential, ratings and form. Negotiations also add
+                more options, including performance and buy-back clauses. Dynamic
+                OVR ratings are intended to reflect player form, morale and
+                fitness across clubs.
               </p>
 
               <p>
-                For example, a stronger search-focused article can answer where a
-                particular title is available, explain a release window, compare
-                two gaming platforms, or summarize a dated industry chart. Readers
-                can understand exactly what the page is about, and the underlying
-                sources can be checked rather than inferred.
+                For players who prefer Career Mode to online competition, that is
+                an important shift in emphasis. Transfers are no longer presented
+                simply as a list of players and prices; the system is designed to
+                make recruitment feel more like a changing market where other
+                clubs are actively pursuing the same targets.
+              </p>
+
+              <h3>Manager Live Creator Challenges</h3>
+
+              <p>
+                FC 27 also expands the Manager Live system with Creator
+                Challenges. EA says players can build and share custom scenarios
+                through a standalone web portal, while a Manager Live Hub surfaces
+                community-made and curated challenges. That adds an ongoing
+                community layer to Career Mode rather than making each season a
+                completely isolated experience.
+              </p>
+
+              <ResponsiveBanner />
+
+              <h2>Ultimate Team adds the FUT Gallery</h2>
+
+              <p>
+                Football Ultimate Team remains one of the major pillars of FC 27,
+                but this year's standout addition is the FUT Gallery. EA says
+                players can curate Sets of past and present Player Items across
+                clubs, leagues, nations and FUT campaigns. Completing and grading
+                Sets increases Gallery Level and contributes to the identity of a
+                player's club.
+              </p>
+
+              <p>
+                FC 27 also introduces Holographic variants and Hall of FUT Player
+                Items, while Squad Building Challenges receive streamlined
+                exchange features. Single Player Live Events give players another
+                way to engage with Ultimate Team outside traditional competitive
+                matches.
+              </p>
+
+              <p>
+                One practical takeaway is that FC 27's Ultimate Team design is
+                not only about assembling the strongest starting eleven. The new
+                Gallery adds a collection and progression layer for players who
+                enjoy organizing items and building a longer-term club history.
               </p>
 
               <div className="table-wrap">
                 <table>
                   <thead>
                     <tr>
-                      <th>U.S. gaming indicator</th>
-                      <th>Latest figure</th>
-                      <th>Source period</th>
+                      <th>FC 27 area</th>
+                      <th>What changed</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Weekly players</td>
-                      <td>212.3 million</td>
-                      <td>ESA 2026</td>
+                      <td>The Grounds</td>
+                      <td>New social football playground connected to Clubs and Pro progression</td>
                     </tr>
                     <tr>
-                      <td>Americans playing weekly</td>
-                      <td>67%</td>
-                      <td>ESA 2026</td>
+                      <td>Career Mode</td>
+                      <td>Rebuilt Transfer Market with active bidding and more dynamic player values</td>
                     </tr>
                     <tr>
-                      <td>Average player age</td>
-                      <td>37</td>
-                      <td>ESA 2026</td>
+                      <td>Ultimate Team</td>
+                      <td>New FUT Gallery, Holographic variants, Hall of FUT items and Single Player Live Events</td>
                     </tr>
                     <tr>
-                      <td>2025 U.S. game spending</td>
-                      <td>$60.8 billion</td>
-                      <td>ESA 2026 / 2025 data</td>
-                    </tr>
-                    <tr>
-                      <td>Players age 8+ using mobile</td>
-                      <td>82%</td>
-                      <td>ESA 2025 data</td>
+                      <td>Gameplay</td>
+                      <td>Dynamic corners, enhanced attacking awareness and player-focused competitive defending</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
+              <h2>Gameplay is built around more control</h2>
+
+              <p>
+                EA says FC 27 introduces more fluid, true-to-life gameplay across
+                modes. The official launch description highlights dynamic corners,
+                enhanced attacking awareness and player-focused defending tailored
+                for competitive play.
+              </p>
+
+              <p>
+                The important point is that these are system-level changes rather
+                than one new feature. FC 27 is trying to make movement, defending
+                and attacking decisions feel more responsive while preserving the
+                differences between casual, career and competitive play.
+              </p>
+
+              <h2>Who is FC 27 for?</h2>
+
+              <p>
+                The answer depends on what you want from a soccer game. Players
+                who enjoy Club-based online play have a new reason to explore The
+                Grounds. Career fans get a deeper transfer system and more
+                community-created scenarios. Ultimate Team players get a new
+                collection layer through the FUT Gallery. And players who mainly
+                care about matches get gameplay changes intended to improve control
+                and responsiveness.
+              </p>
+
+              <p>
+                That variety is one reason FC 27 is better understood as a group
+                of connected football experiences rather than a single game mode.
+                The strongest fit will depend on whether you prefer team building,
+                management, competitive matches, social play or a mixture of all
+                four.
+              </p>
+
               <ResponsiveBanner />
 
-              <h2>What this means for U.S. gaming coverage</h2>
-
-              <p>
-                The size and diversity of the market create room for several
-                different kinds of useful coverage. Evergreen guides can explain
-                how platforms and subscriptions work. Release pages can track
-                dates and availability. Comparison pages can help readers choose
-                between services. Data stories can put a new headline or trend in
-                context.
-              </p>
-
-              <p>
-                Our coverage will therefore prioritize pages with a clear question
-                and a clear answer. We will identify the subject in the title,
-                state the relevant date, name the important games or services, and
-                provide sources where the underlying information can be checked.
-              </p>
-
-              <h2>What to read next</h2>
+              <h2>What to know before you start</h2>
 
               <div className="checklist">
                 <div>
                   <div className="num">01</div>
                   <div>
-                    <strong>How to compare gaming platforms</strong>
-                    <p>What to consider across console, PC and mobile before choosing a platform.</p>
-                    <Link href="/guides/compare-gaming-platforms/">Read the guide →</Link>
+                    <strong>Choose your main mode</strong>
+                    <p>
+                      Decide whether you want to start with The Grounds, Career,
+                      Ultimate Team or traditional matches before spending time on
+                      every system at once.
+                    </p>
                   </div>
                 </div>
 
                 <div>
                   <div className="num">02</div>
                   <div>
-                    <strong>U.S. mobile gaming explained</strong>
-                    <p>How mobile fits into the wider U.S. gaming audience and spending picture.</p>
-                    <Link href="/guides/us-mobile-gaming/">Read the guide →</Link>
+                    <strong>Learn the new progression systems</strong>
+                    <p>
+                      The Grounds uses Pro progression, Career uses a more active
+                      transfer market, and FUT adds Gallery progression alongside
+                      squad building.
+                    </p>
                   </div>
                 </div>
 
                 <div>
                   <div className="num">03</div>
                   <div>
-                    <strong>How we use gaming industry sources</strong>
-                    <p>Our editorial method for dates, statistics, release information and comparisons.</p>
-                    <Link href="/editorial-policy/">See our standards →</Link>
+                    <strong>Check the platform-specific features</strong>
+                    <p>
+                      Not every feature is available on every platform, so check
+                      the official EA information for the mode and system you plan
+                      to use.
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <ResponsiveBanner />
-
               <div className="source-note">
-                The statistics in this article are based primarily on the
-                Entertainment Software Association's 2026 and 2025 U.S. industry
-                reports. Figures are presented with their stated reporting period;
-                they are not forecasts.
+                This article was updated September 28, 2026 and uses official EA
+                Sports FC materials for release information and feature details.
+                Game features, live events and availability can change during the
+                season.
               </div>
 
               <div className="sources">
                 <h3>Sources</h3>
                 <a
-                  href="https://www.theesa.com/two-thirds-of-americans-play-video-games-every-week-according-tonew-report-from-the-entertainment-software-association/"
+                  href="https://news.ea.com/press-releases/press-releases-details/2026/EA-SPORTS-FC-27-Is-Available-Now-Bringing-New-Ways-to-Play-The-Worlds-Game/default.aspx"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  ESA — 2026 Essential Facts: 212.3 million weekly U.S. players
+                  EA — EA SPORTS FC 27 is available now
                 </a>
                 <a
-                  href="https://www.theesa.com/data-insights/"
+                  href="https://www.ea.com/news/ea-fc-the-grounds-is-here"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  ESA — Data &amp; Insights
+                  EA — FC's The Grounds is Here
                 </a>
                 <a
-                  href="https://www.theesa.com/2025-u-s-consumer-spending-on-video-games-nears-pandemic-level-peak-at-60-7-billion-second-highest-on-record/"
+                  href="https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  ESA — 2025 U.S. consumer spending report
+                  EA — FC 27 Launch Update
                 </a>
               </div>
             </div>
@@ -281,11 +336,12 @@ export default function HomePage() {
           <div className="footer-links">
             <Link href="/about/">About</Link>
             <Link href="/editorial-policy/">Editorial Policy</Link>
+            <Link href="/sources/">Sources</Link>
             <Link href="/privacy-policy/">Privacy</Link>
             <Link href="/disclaimer/">Disclaimer</Link>
             <Link href="/contact/">Contact</Link>
           </div>
-          <div>© 2026 PulseViral. Independent U.S. gaming coverage.</div>
+          <div>© 2026 PulseViral. Independent gaming coverage.</div>
         </div>
       </footer>
     </>
