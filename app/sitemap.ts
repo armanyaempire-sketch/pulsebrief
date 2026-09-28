@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://pulseviral.example";
+  const baseUrl = "https://pulsebrief-6sz.pages.dev";
   const paths = [
     "/",
     "/guides/compare-gaming-platforms/",
