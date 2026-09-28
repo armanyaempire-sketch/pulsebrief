@@ -29,6 +29,10 @@ export default function HomePage() {
 
             <h1>EA SPORTS FC 27: What's New, The Grounds, Career Mode and Ultimate Team</h1>
 
+            <div className="article-title-ad">
+              <BannerAd size="box" />
+            </div>
+
             <p className="dek">
               EA SPORTS FC 27 launched worldwide on September 25, 2026. The new
               soccer game adds The Grounds, a rebuilt Career Mode transfer market,
