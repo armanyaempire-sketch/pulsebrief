@@ -6,10 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:cloudflare": "npm install --no-save --no-package-lock @opennextjs/cloudflare@1.20.6 wrangler@4.136.2 && opennextjs-cloudflare build",
-    "deploy": "npm run build:cloudflare && wrangler deploy",
-    "preview": "npm run build:cloudflare && opennextjs-cloudflare preview"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "16.3.5",
