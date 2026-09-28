@@ -1,6 +1,4 @@
 import { BannerAd, NativeAd } from "../components/Ad";
-import AutoScrollToSection from "../components/AutoScrollToSection";
-import TripleClickButton from "../components/TripleClickButton";
 
 const sections = [
   {
@@ -35,7 +33,6 @@ export default function HomePage() {
       </header>
 
       <main className="page">
-        <AutoScrollToSection targetId="sports-games-audience" />
         <div className="top-ad top-ad-stack">
           <div className="top-ad-wide">
             <BannerAd size="wide" />
@@ -149,10 +146,7 @@ export default function HomePage() {
 
               <BannerAd size="mobile" />
 
-              <div style={{ display: "flex", alignItems: "center", flexWrap: "nowrap" }}>
-                <h2 id="sports-games-audience">Sports games have a built-in U.S. audience</h2>
-                <TripleClickButton targetId="sports-games-audience" />
-              </div>
+              <h2 id="sports-games-audience">Sports games have a built-in U.S. audience</h2>
 
               <p>
                 Sports titles are especially durable in America because the
