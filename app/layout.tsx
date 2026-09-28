@@ -3,9 +3,9 @@ import "./globals.css";
 import { GlobalAds } from "../components/GlobalAds";
 
 export const metadata: Metadata = {
-  title: "Pulse — USA Games: What Players Are Watching",
+  title: "PulseViral | U.S. Gaming Guides & Data",
   description:
-    "A fast, mobile-first guide to the games capturing attention across the United States, from blockbuster releases to competitive play.",
+    "PulseViral publishes focused U.S. gaming guides, industry data, platform explainers and source-backed gaming information.",
 };
 
 export default function RootLayout({
