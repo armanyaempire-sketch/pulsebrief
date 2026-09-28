@@ -66,9 +66,23 @@ h1{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.05em;margin:
 .responsive-banner-desktop,.responsive-banner-tablet,.responsive-banner-mobile{width:100%;display:flex;justify-content:center}
 .responsive-banner-desktop{display:flex}
 .responsive-banner-tablet,.responsive-banner-mobile{display:none}
-.sidebar-display-ad{display:flex;justify-content:center}
-.desktop-only-box-ad{display:flex;justify-content:center}
-.desktop-only-box-ad .ad-unit{margin:10px 0}
+.sidebar-display-ad{
+  display:flex;
+  justify-content:center;
+  width:calc(100% + 28px);
+  margin-left:-14px;
+  margin-right:-14px;
+}
+.desktop-only-box-ad{
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+.desktop-only-box-ad .ad-unit{
+  width:300px;
+  min-width:300px;
+  margin:10px 0;
+}
 @media(max-width:900px){
   .responsive-banner-desktop{display:none}
   .responsive-banner-tablet{display:flex}
