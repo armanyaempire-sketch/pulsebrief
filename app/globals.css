@@ -61,3 +61,21 @@ h1{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.05em;margin:
 @media(min-width:901px){
   .top-ad-wide{display:flex}
 }
+
+.responsive-banner{width:100%;display:flex;justify-content:center;margin:28px 0;min-height:50px}
+.responsive-banner-desktop,.responsive-banner-tablet,.responsive-banner-mobile{width:100%;display:flex;justify-content:center}
+.responsive-banner-desktop{display:flex}
+.responsive-banner-tablet,.responsive-banner-mobile{display:none}
+.sidebar-display-ad{display:flex;justify-content:center}
+.desktop-only-box-ad{display:flex;justify-content:center}
+.desktop-only-box-ad .ad-unit{margin:10px 0}
+@media(max-width:900px){
+  .responsive-banner-desktop{display:none}
+  .responsive-banner-tablet{display:flex}
+  .desktop-only-box-ad{display:none}
+}
+@media(max-width:600px){
+  .responsive-banner-tablet{display:none}
+  .responsive-banner-mobile{display:flex}
+  .responsive-banner{margin:20px 0}
+}
