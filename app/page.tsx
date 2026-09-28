@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BannerAd, NativeAd } from "../components/Ad";
+import { BannerAd, NativeAd, ResponsiveBanner } from "../components/Ad";
 
 export default function HomePage() {
   return (
@@ -161,6 +161,8 @@ export default function HomePage() {
                 </table>
               </div>
 
+              <ResponsiveBanner />
+
               <h2>What this means for U.S. gaming coverage</h2>
 
               <p>
@@ -210,6 +212,8 @@ export default function HomePage() {
                 </div>
               </div>
 
+              <ResponsiveBanner />
+
               <div className="source-note">
                 The statistics in this article are based primarily on the
                 Entertainment Software Association's 2026 and 2025 U.S. industry
@@ -257,6 +261,12 @@ export default function HomePage() {
               <Link href="/editorial-policy/" className="featured-link">
                 How we source our data
               </Link>
+
+              <div className="sidebar-display-ad">
+                <div className="desktop-only-box-ad">
+                  <BannerAd size="box" />
+                </div>
+              </div>
 
               <div className="sidebar-divider" />
 
