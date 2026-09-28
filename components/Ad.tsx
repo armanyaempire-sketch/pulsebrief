@@ -80,7 +80,7 @@ export function BannerAd({ size }: { size: BannerSize }) {
 
 export function ResponsiveBanner() {
   return (
-    <div className="responsive-banner">
+    <div className="responsive-banner" aria-label="Advertisement">
       <div className="responsive-banner-desktop">
         <BannerAd size="wide" />
       </div>
