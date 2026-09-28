@@ -8,10 +8,12 @@ function BannerFrame({
   width,
   height,
   keyId,
+  eager = false,
 }: {
   width: number;
   height: number;
   keyId: string;
+  eager?: boolean;
 }) {
   const srcDoc = `<!doctype html>
 <html>
@@ -49,7 +51,7 @@ window.atOptions = {
       srcDoc={srcDoc}
       width={width}
       height={height}
-      loading="lazy"
+      loading={eager ? "eager" : "lazy"}
       scrolling="no"
       frameBorder="0"
       style={{
@@ -73,6 +75,7 @@ export function BannerAd({ size }: { size: BannerSize }) {
         width={config.width}
         height={config.height}
         keyId={config.key}
+        eager={size === "box"}
       />
     </div>
   );
